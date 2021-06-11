@@ -1,0 +1,94 @@
+#test-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* logo-card holds the logo container ... setting font family for card */
+#logo-card {
+  font-family: "Roboto", sans-serif;
+  height: 7em;
+  width: 7.5em;
+}
+
+/* logo-container holds each element of the logo ... setting height of container*/
+#logo-container {
+  position: absolute;
+  height: 7em;
+  width: 7.5em;
+}
+
+/* each logo element has class of logo ... setting height of logo elements */
+.logo {
+  position: absolute;
+  font-size: 3em;
+}
+
+#b {
+  top: 0.335em;
+  left: 1.15em;
+}
+
+#eone {
+  top: 0.26em;
+  left: 1.315em;
+}
+
+#r {
+  top: 0.525em;
+  left: 1.66em;
+}
+
+#none {
+  top: 0.4em;
+  left: 1.9em;
+}
+
+#ione {
+  top: 0.4em;
+  left: 2.1em;
+}
+
+#etwo {
+  top: 0.15em;
+  left: 1.9em;
+}
+
+#m {
+  top: 1.25em;
+  left: 0.2em;
+}
+
+#c {
+  top: 1.25em;
+  left: 0.86em;
+}
+
+#k {
+  top: 1.25em;
+  left: 0.745em;
+}
+
+#ntwo {
+  top: 1.25em;
+  left: 1.2em;
+}
+
+#itwo {
+  top: 1.25em;
+  left: 1.36em;
+}
+
+#g {
+  top: 1em;
+  left: 1.22em;
+}
+
+#h {
+  top: 1em;
+  left: 1.563em;
+}
+
+#t {
+  top: 0.99em;
+  left: 1.725em;
+}
