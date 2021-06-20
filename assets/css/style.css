@@ -1,26 +1,32 @@
+header {
+}
+
 #test-flex {
-  display: flex;
-  flex-direction: column;
+  height: 80em;
+  width: 80em;
+  position: absolute;
+  right: 0px;
 }
 
 /* logo-card holds the logo container ... setting font family for card */
 #logo-card {
   font-family: "Roboto", sans-serif;
-  height: 7em;
-  width: 7.5em;
+  height: 10em;
+  width: 10.5em;
+  position: absolute;
+  right: 0px;
 }
 
 /* logo-container holds each element of the logo ... setting height of container*/
 #logo-container {
-  position: absolute;
-  height: 7em;
-  width: 7.5em;
+  height: 10em;
+  width: 10.5em;
 }
 
 /* each logo element has class of logo ... setting height of logo elements */
 .logo {
   position: absolute;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #b {
@@ -92,3 +98,51 @@
   top: 0.99em;
   left: 1.725em;
 }
+
+#stripe {
+  position: absolute;
+  right: 0;
+  width: 50em;
+  height: 50em;
+}
+
+#red-stripe {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  0% {
+  }
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    /* width: 1em; */
+    /* height: 1em; */
+    transform: scaleX(0.37) scaleY(0.065) translate(40.1em, -266em)
+      rotate(90deg);
+  }
+}
+
+/* .red {
+  transform: rotate(90deg);
+  animation-name: stripe;
+  animation-duration: 2s;
+  animation-direction: ease;
+  animation-delay: 2s;
+  transition-delay: 2s;
+}
+
+@keyframes stripe {
+  0.0% {
+  }
+  100% {
+    transform: rotate(90deg) translate(100px, 50px);
+    width: 20%;
+  }
+} */
