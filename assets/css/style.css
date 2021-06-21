@@ -1,9 +1,31 @@
 header {
+  margin-top: 0;
+  /* position: fixed; */
+}
+
+main {
+  margin-top: 10em;
+}
+
+#content {
+  animation: fade 5s linear 3.3s normal none;
+  visibility: hidden;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #test-flex {
+  position: fixed;
+  margin-top: -11em;
   height: 10em;
-  position: absolute;
+  /* position: absolute; */
   right: 0px;
 }
 
@@ -20,6 +42,7 @@ header {
 #logo-container {
   height: 10em;
   width: 10.5em;
+  visibility: hidden;
 }
 
 /* each logo element has class of logo ... setting height of logo elements */
@@ -27,7 +50,6 @@ header {
   position: absolute;
   font-size: 4em;
   z-index: 4;
-  visibility: hidden;
 }
 
 #b {
@@ -192,13 +214,15 @@ header {
 }
 
 #stripe-bounce {
+  visibility: hidden;
   position: absolute;
   right: 0;
   width: 10em;
   height: 10.5em;
-  width: 5;
+  /* width: 5; */
   z-index: 7;
-  animation: bounce 200s linear 3s infinite normal none;
+  animation: bounce 200s linear 4.5s infinite normal none;
+  transform: translate(0em, 0.6em);
 }
 
 @keyframes bounce {
@@ -214,7 +238,7 @@ header {
   }
 
   11% {
-    transform: translate(3em, -6em) rotate(84deg);
+    transform: translate(3em, -4em) rotate(84deg);
   }
 
   20% {
@@ -242,7 +266,7 @@ header {
   }
 
   47% {
-    transform: translate(-4em, -1.2em) rotate(309deg);
+    transform: translate(-3em, -1.2em) rotate(309deg);
   }
 
   50% {
@@ -254,7 +278,7 @@ header {
   }
 
   62% {
-    transform: translate(3em, -6em) rotate(84deg);
+    transform: translate(3em, -4em) rotate(84deg);
   }
 
   67% {
@@ -270,7 +294,7 @@ header {
   }
 
   82% {
-    transform: translate(-1em, -4em) rotate(301deg);
+    transform: translate(-1em, -2.5em) rotate(301deg);
   }
 
   87% {
@@ -299,7 +323,7 @@ header {
 .open-stripe {
   stroke-dasharray: 60;
   stroke-dashoffset: 60;
-  animation: dash 2s linear forwards;
+  animation: dash 3s linear forwards;
 }
 
 @keyframes dash {
@@ -312,7 +336,7 @@ header {
 
   100% {
     stroke-dashoffset: 0;
-    transform: scaleX(0.37) scaleY(0.065) translate(40.1em, -266em)
+    transform: scaleX(0.37) scaleY(0.065) translate(40.1em, -260em)
       rotate(90deg);
   }
 }
