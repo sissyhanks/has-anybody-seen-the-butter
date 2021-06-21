@@ -2,8 +2,7 @@ header {
 }
 
 #test-flex {
-  height: 80em;
-  width: 80em;
+  height: 10em;
   position: absolute;
   right: 0px;
 }
@@ -27,6 +26,8 @@ header {
 .logo {
   position: absolute;
   font-size: 4em;
+  z-index: 4;
+  visibility: hidden;
 }
 
 #b {
@@ -99,6 +100,191 @@ header {
   left: 1.725em;
 }
 
+/* each blinking element has class of logo-top ... setting height of logo elements */
+.logo-top {
+  position: absolute;
+  font-size: 4em;
+  z-index: 10;
+}
+
+#a {
+  top: 0.335em;
+  left: 1.15em;
+  visibility: hidden;
+}
+
+#d {
+  top: 0.26em;
+  left: 1.315em;
+  visibility: hidden;
+}
+
+#f {
+  top: 0.525em;
+  left: 1.66em;
+  visibility: hidden;
+}
+
+#j {
+  top: 0.4em;
+  left: 1.9em;
+  visibility: hidden;
+}
+
+#l {
+  top: 0.4em;
+  left: 2.1em;
+  visibility: hidden;
+}
+
+#o {
+  top: 0.15em;
+  left: 1.9em;
+  visibility: hidden;
+}
+
+#p {
+  top: 1.25em;
+  left: 0.2em;
+  visibility: hidden;
+}
+
+#q {
+  top: 1.25em;
+  left: 0.86em;
+  visibility: hidden;
+}
+
+#s {
+  top: 1.25em;
+  left: 0.745em;
+  visibility: hidden;
+}
+
+#u {
+  top: 1.25em;
+  left: 1.2em;
+  visibility: hidden;
+}
+
+#v {
+  top: 1.25em;
+  left: 1.36em;
+  visibility: hidden;
+}
+
+#w {
+  top: 1em;
+  left: 1.22em;
+  visibility: hidden;
+}
+
+#x {
+  top: 1em;
+  left: 1.563em;
+  visibility: hidden;
+}
+
+#y {
+  top: 0.99em;
+  left: 1.725em;
+  visibility: hidden;
+}
+
+#stripe-bounce {
+  position: absolute;
+  right: 0;
+  width: 10em;
+  height: 10.5em;
+  width: 5;
+  z-index: 7;
+  animation: bounce 200s linear 3s infinite normal none;
+}
+
+@keyframes bounce {
+  0% {
+  }
+
+  3% {
+    transform: translate(2em, 1.2em) rotate(12deg);
+  }
+
+  8% {
+    transform: translate(6em, -5em) rotate(60deg);
+  }
+
+  11% {
+    transform: translate(3em, -6em) rotate(84deg);
+  }
+
+  20% {
+    transform: translate(-2em, 3em) rotate(113deg);
+  }
+
+  25% {
+    transform: translate(1em, -3em) rotate(182deg);
+  }
+
+  30% {
+    transform: translate(3.5em, 0.5em) rotate(209deg);
+  }
+
+  35% {
+    transform: translate(-1em, -4em) rotate(301deg);
+  }
+
+  40% {
+    transform: translate(-1.5em, 2em) rotate(326deg);
+  }
+
+  42% {
+    transform: translate(-1em, 0em) rotate(348deg);
+  }
+
+  47% {
+    transform: translate(-4em, -1.2em) rotate(309deg);
+  }
+
+  50% {
+    transform: translate(-2em, -1em) rotate(287deg);
+  }
+
+  53% {
+    transform: translate(-0.75em, 0em) rotate(241deg);
+  }
+
+  62% {
+    transform: translate(3em, -6em) rotate(84deg);
+  }
+
+  67% {
+    transform: translate(-2em, 3em) rotate(113deg);
+  }
+
+  72% {
+    transform: translate(1em, -3em) rotate(182deg);
+  }
+
+  77% {
+    transform: translate(3.5em, 0.5em) rotate(209deg);
+  }
+
+  82% {
+    transform: translate(-1em, -4em) rotate(301deg);
+  }
+
+  87% {
+    transform: translate(-1.5em, 2em) rotate(267deg);
+  }
+
+  92% {
+    transform: translate(-4em, 0em) rotate(186deg);
+  }
+
+  100% {
+  }
+}
+
 #stripe {
   position: absolute;
   right: 0;
@@ -107,6 +293,10 @@ header {
 }
 
 #red-stripe {
+  visibility: hidden;
+}
+
+.open-stripe {
   stroke-dasharray: 60;
   stroke-dashoffset: 60;
   animation: dash 2s linear forwards;
@@ -122,27 +312,7 @@ header {
 
   100% {
     stroke-dashoffset: 0;
-    /* width: 1em; */
-    /* height: 1em; */
     transform: scaleX(0.37) scaleY(0.065) translate(40.1em, -266em)
       rotate(90deg);
   }
 }
-
-/* .red {
-  transform: rotate(90deg);
-  animation-name: stripe;
-  animation-duration: 2s;
-  animation-direction: ease;
-  animation-delay: 2s;
-  transition-delay: 2s;
-}
-
-@keyframes stripe {
-  0.0% {
-  }
-  100% {
-    transform: rotate(90deg) translate(100px, 50px);
-    width: 20%;
-  }
-} */
