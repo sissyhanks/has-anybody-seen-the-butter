@@ -1,10 +1,21 @@
 header {
+  position: sticky;
   margin-top: 0;
-  /* position: fixed; */
+  height: 12em;
+  background-color: white;
+  background: linear-gradient(white, 98%, transparent);
+  z-index: 10;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
 }
 
 main {
-  margin-top: 10em;
+  z-index: 1;
 }
 
 #content {
@@ -23,9 +34,9 @@ main {
 
 #test-flex {
   position: fixed;
-  margin-top: -11em;
-  height: 10em;
-  /* position: absolute; */
+  margin-top: 0;
+  height: 12em;
+
   right: 0px;
 }
 
