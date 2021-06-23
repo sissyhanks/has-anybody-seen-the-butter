@@ -17,8 +17,14 @@ if (
     setTimeout(() => {
         document.querySelector("#v").style.visibility = "visible";
     }, 3300);
+        setTimeout(() => {
+        document.querySelector("#nav").style.visibility = "visible";
+    }, 3300);
     setTimeout(() => {
         document.querySelector("#content").style.visibility = "visible";
+    }, 3300);
+    setTimeout(() => {
+        document.querySelector("#about").style.visibility = "visible";
     }, 3300);
     setTimeout(() => {
         document.querySelector("#y").style.visibility = "visible";
@@ -89,4 +95,37 @@ if (
     
 }
 
+let main = document.querySelector("#main");
+let aboutDiv = document.querySelector("#about-div");
+let portfolioDiv = document.querySelector("#portfolio-div");
 
+let contactDiv = document.querySelector("#contact-div");
+
+let about = document.querySelector("#about");
+about.addEventListener('click', event => {
+$( "#content" ).prepend( $( "#about-div" ) );
+aboutDiv.style.visibility = "visible";
+portfolioDiv.style.visibility = "hidden";
+contactDiv.style.visibility = "hidden";
+});
+
+let portfolio = document.querySelector("#portfolio");
+portfolio.addEventListener('click', event => {
+$( "#content" ).prepend( $( "#portfolio-div" ) );
+aboutDiv.style.visibility = "hidden";
+portfolioDiv.style.visibility = "visible";
+contactDiv.style.visibility = "hidden";
+});
+
+let blog = document.querySelector("#blog");
+blog.addEventListener('click', event => {
+console.log("click");
+});
+
+let contact = document.querySelector("#contact");
+contact.addEventListener('click', event => {
+$( "#content" ).prepend( $( "#contact-div" ) );
+aboutDiv.style.visibility = "hidden";
+portfolioDiv.style.visibility = "hidden";
+contactDiv.style.visibility = "visible";
+});

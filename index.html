@@ -22,100 +22,190 @@
     <header class="sticky-top">
       <div id="test-flex">
         <!-- logo card contains css styled logo -->
-        <div id="logo-card">
-          <div id="logo-container">
-            <div class="logo" id="b">B</div>
-            <div class="logo" id="eone">e</div>
-            <div class="logo" id="r">r</div>
-            <div class="logo" id="none">n</div>
-            <div class="logo" id="ione">i</div>
-            <div class="logo" id="etwo">e</div>
-            <div class="logo" id="m">M</div>
-            <div class="logo" id="c">c</div>
-            <div class="logo" id="k">K</div>
-            <div class="logo" id="ntwo">n</div>
-            <div class="logo" id="itwo">i</div>
-            <div class="logo" id="g">g</div>
-            <div class="logo" id="h">h</div>
-            <div class="logo" id="t">t</div>
-          </div>
+        <div id="animate">
+          <div id="logo-card">
+            <div id="logo-container">
+              <div class="logo" id="b">B</div>
+              <div class="logo" id="eone">e</div>
+              <div class="logo" id="r">r</div>
+              <div class="logo" id="none">n</div>
+              <div class="logo" id="ione">i</div>
+              <div class="logo" id="etwo">e</div>
+              <div class="logo" id="m">M</div>
+              <div class="logo" id="c">c</div>
+              <div class="logo" id="k">K</div>
+              <div class="logo" id="ntwo">n</div>
+              <div class="logo" id="itwo">i</div>
+              <div class="logo" id="g">g</div>
+              <div class="logo" id="h">h</div>
+              <div class="logo" id="t">t</div>
+            </div>
 
-          <div id="logo-blink">
-            <div class="logo-top" id="a">B</div>
-            <div class="logo-top" id="d">e</div>
-            <div class="logo-top" id="f">r</div>
-            <div class="logo-top" id="j">n</div>
-            <div class="logo-top" id="l">i</div>
-            <div class="logo-top" id="o">e</div>
-            <div class="logo-top" id="p">M</div>
-            <div class="logo-top" id="q">c</div>
-            <div class="logo-top" id="s">K</div>
-            <div class="logo-top" id="u">n</div>
-            <div class="logo-top" id="v">i</div>
-            <div class="logo-top" id="w">g</div>
-            <div class="logo-top" id="x">h</div>
-            <div class="logo-top" id="y">t</div>
+            <div id="logo-blink">
+              <div class="logo-top" id="a">B</div>
+              <div class="logo-top" id="d">e</div>
+              <div class="logo-top" id="f">r</div>
+              <div class="logo-top" id="j">n</div>
+              <div class="logo-top" id="l">i</div>
+              <div class="logo-top" id="o">e</div>
+              <div class="logo-top" id="p">M</div>
+              <div class="logo-top" id="q">c</div>
+              <div class="logo-top" id="s">K</div>
+              <div class="logo-top" id="u">n</div>
+              <div class="logo-top" id="v">i</div>
+              <div class="logo-top" id="w">g</div>
+              <div class="logo-top" id="x">h</div>
+              <div class="logo-top" id="y">t</div>
+            </div>
+          </div>
+          <div id="stripe-bounce">
+            <svg
+              id="red-stripe-bounce"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="54" y1="66" x2="54" y2="87" stroke="red" />
+            </svg>
+          </div>
+          <div id="stripe">
+            <svg
+              id="red-stripe"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="20" y1="20" x2="80" y2="20" stroke="red" />
+            </svg>
           </div>
         </div>
-        <div id="stripe-bounce">
-          <svg
-            id="red-stripe-bounce"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line x1="54" y1="66" x2="54" y2="87" stroke="red" />
-          </svg>
-        </div>
-        <div id="stripe">
-          <svg
-            id="red-stripe"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line x1="20" y1="20" x2="80" y2="20" stroke="red" />
-          </svg>
+
+        <div id="nav">
+          <div id="about" class="navigation">ABOUT</div>
+          <div id="portfolio" class="navigation">PORTFOLIO</div>
+          <div id="blog" class="navigation">BLOG</div>
+          <div id="contact" class="navigation">CONTACT</div>
         </div>
       </div>
     </header>
-    <main>
+    <main id="mian">
       <div id="content" class="container">
-        <div class="col">
-          <div class="row">
-            <img
-              src="./assets/images/aboutMe.png"
-              class="img-fluid"
-              alt="Bernie McKnight"
-            />
-            About Me
-          </div>
-          <div class="row">
-            <img
-              src="./assets/images/party.png"
-              class="img-fluid"
-              alt="partyrama"
-            />
-            Column
-          </div>
-          <div class="row">
-            <img
-              src="./assets/images/work.png"
-              class="img-fluid"
-              alt="day planner"
-            />
-            Column
-          </div>
-          <div class="row">
-            <img
-              src="./assets/images/codeQuiz.png"
-              class="img-fluid"
-              alt="code quiz"
-            />
-            Column
+        <div id="about-div" class="card mb-3 border-0" style="width: 100%">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/images/aboutMe.png"
+                class="img-fluid rounded-start"
+                alt="Bernie McKnight"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Hi, I'm Bernie McKnight</h5>
+                <p class="card-text">I developed this website.</p>
+                <p class="card-text">
+                  Here is an apple playlist of some of the songs I listened to
+                  while I was working on it.
+                </p>
+                <p class="card-text">Well, that pretty much sums it up.</p>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- about end -->
+
+        <!-- portfolio begin -->
+        <div id="portfolio-div" class="card-group">
+          <div class="card border-0">
+            <img
+              src="./assets/images/party.png"
+              class="card-img-top border-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Partyrama</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer border-0">
+              <small class="text-muted"
+                ><a href=" ">VIEW DEPLOYED SITE</a></small
+              >
+              <br />
+              <small class="text-muted"><a href=" ">VISIT REPO</a></small>
+            </div>
+          </div>
+          <div class="card border-0">
+            <img
+              src="./assets/images/codeQuiz.png"
+              class="card-img-top border-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Code Quiz</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer border-0">
+              <small class="text-muted"
+                ><a href=" ">VIEW DEPLOYED SITE</a></small
+              >
+              <br />
+              <small class="text-muted"><a href=" ">VISIT REPO</a></small>
+            </div>
+          </div>
+          <div class="card border-0">
+            <img
+              src="./assets/images/work.png"
+              class="card-img-top border-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Day Planner</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer border-0">
+              <small class="text-muted"
+                ><a href=" ">VIEW DEPLOYED SITE</a></small
+              >
+              <br />
+              <small class="text-muted"><a href=" ">VISIT REPO</a></small>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio end -->
+
+        <!-- contact start -->
+        <div id="contact-div" class="card mb-3 border-0" style="width: 100%">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/images/aboutMe.png"
+                class="img-fluid rounded-start"
+                alt="Bernie McKnight"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Let's Keep in Touch</h5>
+                <p class="card-text">phone: (614) 321-9238‬</p>
+                <p class="card-text">email: sissyhanks@yahoo.com</p>
+                <p class="card-text">Well, that pretty much sums it up.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- contact end -->
       </div>
     </main>
-    <footer></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
