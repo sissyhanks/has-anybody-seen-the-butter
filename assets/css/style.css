@@ -42,6 +42,15 @@ header {
   color: red;
 }
 
+a {
+  color: #292b2c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
 main {
   z-index: 1;
 }
