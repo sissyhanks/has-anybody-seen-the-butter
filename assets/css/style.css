@@ -40,6 +40,7 @@ header {
 }
 .navigation:hover {
   color: red;
+  text-decoration: none;
 }
 
 a {
@@ -49,6 +50,35 @@ a {
 
 a:hover {
   color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#about:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#portfolio:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#contact:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.text-link {
+  color: #292b2c;
+  text-decoration: none;
+  background-color: #ffebeb;
+}
+
+.text-link:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
 }
 
 main {
