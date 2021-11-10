@@ -1,24 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Container, AppBar, Grow, Grid } from "@mui/material";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Typography from '@mui/material/Typography'
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/">
-          <About />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/projects">
-          <Projects />
-        </Route>
-      </Routes>
-    </Router>
+    <Container>
+      <AppBar>
+        <Typography variant="h2" align="right">
+          Bernie McKnight
+        </Typography>
+      </AppBar>
+      <Grow in>
+        <Container>
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<About />} />
+              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/projects" element={<Projects />} />
+            </Routes>
+          </Router>
+        </Container>
+      </Grow>
+    </Container>
   );
 }
 

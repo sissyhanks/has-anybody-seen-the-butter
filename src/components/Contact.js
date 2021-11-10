@@ -1,9 +1,11 @@
 import React from 'react'
+import Typography from '@mui/material/Typography'
+import { Container } from "@mui/material";
 
 export default function Contact() {
   return (
-    <div>
-      Contact
-    </div>
+      <Typography color="secondary" align="center">
+        <p>contact</p>
+      </Typography>
   )
 }
