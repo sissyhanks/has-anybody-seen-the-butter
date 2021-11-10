@@ -1,4 +1,6 @@
 import { Container, AppBar, Grow, Grid } from "@mui/material";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from "./themes";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +13,11 @@ import Typography from '@mui/material/Typography'
 import useStyles from './styles';
 
 
+
 function App() {
   const classes = useStyles();
   return (
+  <ThemeProvider theme={theme}>
     <Container>
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography variant="h2" align="right">
@@ -32,6 +36,7 @@ function App() {
         </Container>
       </Grow>
     </Container>
+  </ThemeProvider>
   );
 }
 
