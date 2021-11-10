@@ -8,12 +8,14 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Typography from '@mui/material/Typography'
+import useStyles from './styles';
 
 
 function App() {
+  const classes = useStyles();
   return (
     <Container>
-      <AppBar>
+      <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography variant="h2" align="right">
           Bernie McKnight
         </Typography>
