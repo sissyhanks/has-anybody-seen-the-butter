@@ -1,5 +1,6 @@
 import { Container, AppBar, Grow, Grid } from "@mui/material";
 import { ThemeProvider } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 import theme from "./themes";
 import {
   BrowserRouter as Router,
@@ -20,9 +21,15 @@ function App() {
   <ThemeProvider theme={theme}>
     <Container>
       <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography variant="h2" align="right">
+        <Typography component="div" variant="h2">
+          <Box sx={{  textAlign: 'right', m: 1 }}>
           Bernie McKnight
+          </Box>
         </Typography>
+        <Typography variant="h3">
+          <Box sx={{  textAlign: 'right', m: 1 }}>
+          website developer
+          </Box></Typography>
       </AppBar>
       <Grow in>
         <Container>
