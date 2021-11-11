@@ -5,12 +5,13 @@ const merriweather = "'Merriweather', serif";
 
 const theme = createTheme({
   typography: {
-    title: {
       fontFamily: raleway,
-      
+      h2: {
+        "fontWeight": 800,
+      }
     }
     
   },
-});
+);
 
 export default theme;
