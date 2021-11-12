@@ -9,14 +9,14 @@ export default function Head() {
   const classes = useStyles();
   return (
   <ThemeProvider theme={theme}>
-    <Container>
+    <Container sx={{ mt: 2, mb: 2, alignSelf: 'flex-end' }}>
         <Typography variant="h2">
-          <Box>
+          <Box sx={{ display: 'inline-flex' }}>
           Bernie McKnight
           </Box>
         </Typography>
         <Typography variant="h3">
-          <Box>
+          <Box sx={{ ml: 1, display: 'inline-flex'}}>
           website developer
           </Box>
           </Typography>

@@ -9,9 +9,9 @@ theme.typography.h2 = {
   fontFamily: raleway,
   fontWeight: 800,
   fontSize: '2rem',
-  textAlign: 'right',
+  textAlign: 'left',
   '@media (min-width:300px)': {
-    fontSize: '2.5rem',
+    fontSize: '1.5rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '3.4rem',
@@ -20,13 +20,15 @@ theme.typography.h2 = {
 
 theme.typography.h3 = {
   fontFamily: merriweather,
+  fontWeight: 300,
+  fontStyle: 'italic',
   fontSize: '2rem',
-  textAlign: 'right',
+  textAlign: 'left',
   '@media (min-width:300px)': {
-    fontSize: '1.5rem',
+    fontSize: '1rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '3rem',
+    fontSize: '2.5rem',
   },
 }
 

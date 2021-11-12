@@ -21,8 +21,12 @@ function App() {
   return (
   <ThemeProvider theme={theme}>
     <Container>
-      <AppBar className={classes.appBar} position="static">
-        <Head />
+      <AppBar>
+        <Grid container direction="row" justifyContent="flex-end">
+          <Grid item>
+            <Head />
+          </Grid>
+        </Grid>
       </AppBar>
       <Grow in>
         <Container>
