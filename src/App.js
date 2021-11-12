@@ -7,6 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Head from "./components/Head";
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
@@ -20,16 +21,8 @@ function App() {
   return (
   <ThemeProvider theme={theme}>
     <Container>
-      <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography component="div" variant="h2">
-          <Box sx={{  textAlign: 'right', m: 1 }}>
-          Bernie McKnight
-          </Box>
-        </Typography>
-        <Typography variant="h3">
-          <Box sx={{  textAlign: 'right', m: 1 }}>
-          website developer
-          </Box></Typography>
+      <AppBar className={classes.appBar} position="static">
+        <Head />
       </AppBar>
       <Grow in>
         <Container>
