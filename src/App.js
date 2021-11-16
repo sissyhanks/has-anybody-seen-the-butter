@@ -7,7 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Head from "./components/Head";
+import NavBar from "./components/NavBar";
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
@@ -21,13 +21,7 @@ function App() {
   return (
   <ThemeProvider theme={theme}>
     <Container>
-      <AppBar>
-        <Grid container direction="row" justifyContent="flex-end">
-          <Grid item>
-            <Head />
-          </Grid>
-        </Grid>
-      </AppBar>
+      <NavBar />
       <Grow in>
         <Container>
           <Router>

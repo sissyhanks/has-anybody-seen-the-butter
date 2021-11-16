@@ -8,13 +8,13 @@ const theme = createTheme();
 theme.typography.h2 = {
   fontFamily: raleway,
   fontWeight: 800,
-  fontSize: '2rem',
+  fontSize: '3rem',
   textAlign: 'left',
-  '@media (min-width:300px)': {
-    fontSize: '1.5rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '3.4rem',
+  // '@media (min-width:300px)': {
+  //   fontSize: '1.5rem',
+  // },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1rem',
   },
 }
 
@@ -29,6 +29,19 @@ theme.typography.h3 = {
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '2.5rem',
+  },
+}
+
+theme.typography.h4 = {
+  fontFamily: raleway,
+  fontWeight: 300,
+  fontSize: '1rem',
+  textAlign: 'left',
+  // '@media (min-width:300px)': {
+  //   fontSize: '.75rem',
+  // },
+  [theme.breakpoints.down('md')]: {
+    fontSize: '1.5rem',
   },
 }
 
