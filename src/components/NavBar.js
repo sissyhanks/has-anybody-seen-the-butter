@@ -15,7 +15,7 @@ function NavBar() {
     <Container>
       <AppBar variant="primary">
         <Box sx={{ display: 'flex', direction: { xs: 'column', sm: 'column', md: 'row' }, justifyContent: 'space-between', flexDirection: { xs: 'column', sm: 'column', md: 'row' } }}>
-            <Box sx={{ ml: { xs: 0, sm: 5 }, display: 'flex', flexDirection: { xs: 'row', sm: 'row', md: 'column' }, justifyContent: 'space-evenly' }}>
+            <Box sx={{ ml: { xs: 0, sm: 0, md: 5 }, display: 'flex', flexDirection: { xs: 'row', sm: 'row', md: 'column' }, justifyContent: 'space-evenly' }}>
               <Typography variant="h4" sx={{ mt: .5 }}>ABOUT</Typography>
               <Typography variant="h4" sx={{ mt: .5 }}>PORTFOLIO</Typography>
               <Typography variant="h4" sx={{ mt: .5 }}>CONTACT</Typography>

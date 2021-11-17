@@ -22,8 +22,7 @@ theme.typography.h2 = {
     fontSize: '2.3rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '3rem',
-    color: 'green',
+    fontSize: '4.6rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '5.2rem',
@@ -42,8 +41,8 @@ theme.typography.h3 = {
     letterSpacing: '.4rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '3rem',
-    color: 'green',
+    fontSize: '1.5rem',
+    letterSpacing: '.75rem',
   },
   [theme.breakpoints.up('md')]: {
     fontWeight: 400,
