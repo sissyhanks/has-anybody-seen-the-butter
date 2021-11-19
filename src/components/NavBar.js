@@ -13,7 +13,7 @@ function NavBar() {
   return (
   <ThemeProvider theme={theme}>
     <Container>
-      <AppBar variant="primary">
+      <AppBar variant="primary" position="static">
         <Box sx={{ display: 'flex', direction: { xs: 'column', sm: 'column', md: 'row' }, justifyContent: 'space-evenly', flexDirection: { xs: 'column', sm: 'column', md: 'row' } }}>
             <Box sx={{ ml: { xs: 0, sm: 0, md: 5 }, display: 'flex', flexDirection: { xs: 'row', sm: 'row', md: 'column' }, justifyContent: 'space-evenly' }}>
               <Typography variant="h4" sx={{ mt: .5 }}>ABOUT</Typography>
