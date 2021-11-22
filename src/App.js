@@ -1,6 +1,6 @@
-import { Container, AppBar, Grow, Grid } from "@mui/material";
-import { ThemeProvider } from '@mui/material/styles';
-import theme from "./themes";
+import { Container, Grow } from "@mui/material";
+
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,13 +11,12 @@ import About from "./components/About";
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Bottom from "./components/Bottom";
-import Typography from '@mui/material/Typography';
+
 
 
 
 function App() {
   return (
-  <ThemeProvider theme={theme}>
     <Container>
       <NavBar />
           <Grow in>
@@ -34,8 +33,6 @@ function App() {
           </Grow>
           <Bottom />
         </Container>
-
-  </ThemeProvider>
   );
 }
 

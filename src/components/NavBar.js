@@ -21,9 +21,9 @@ function NavBar() {
               <Link href="/contact" underline="none" variant="h4" className={classes.nav} sx={{ mt: .5 }}>CONTACT</Link>
             </Box>
             <Box sx={{ mt: {xs: 0, sm: 0, md: 2}, mb: 2, alignSelf: { xs: 'center', sm: 'center' } }}>
-              <Typography href="/" underline="none" variant="h2">
+              <Link href="/" underline="none" variant="h2" className={classes.bernie}>
                 BERNIE McKNIGHT
-              </Typography>
+              </Link>
               <Typography variant="h3">
                 WEBSITE DEVELOPER
               </Typography>

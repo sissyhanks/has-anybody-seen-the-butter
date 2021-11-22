@@ -6,5 +6,12 @@ export default makeStyles((theme) => ({
     '&:hover': {
       color: '#DD99BB',
     }
+  },
+
+  bernie: {
+    color: '#F9C80E',
+    '&:hover': {
+      color: '#DD99BB',
+    }
   }
 }));
