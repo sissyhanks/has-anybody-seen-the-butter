@@ -19,15 +19,15 @@ export default function Bottom() {
   return (
   <ThemeProvider theme={theme}>
     <Container>
-      <AppBar variant="primary" position="fixed" sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar variant="primary" position="fixed" sx={{ top: 'auto', bottom: 25 }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-evenly'}}>
-          <Link  href="https://www.linkedin.com/in/bernadette-mcknight-a34a72201/" className={classes.icon}>
+          <Link  href="https://www.linkedin.com/in/bernadette-mcknight-a34a72201/" className={classes.nav}>
             <LinkedInIcon />
           </Link>
-          <Link href="https://github.com/sissyhanks" className={classes.icon}>
+          <Link href="https://github.com/sissyhanks" className={classes.nav}>
             <GitHubIcon />
           </Link>
-          <Link href="https://twitter.com/sissyhanks" className={classes.icon}>
+          <Link href="https://twitter.com/sissyhanks" className={classes.nav}>
             <TwitterIcon />
           </Link>
 
