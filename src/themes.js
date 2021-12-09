@@ -59,13 +59,6 @@ theme.typography.h4 = {
   textAlign: 'left',
 }
 
-theme.typography.h4 = {
-  color: '#6D466B',
-  fontFamily: raleway,
-  fontWeight: 800,
-  fontSize: '1rem',
-  letterSpacing: '.1rem',
-  textAlign: 'left',
-}
+
 
 export default theme;
