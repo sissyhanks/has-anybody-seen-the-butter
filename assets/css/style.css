@@ -54,9 +54,25 @@ a:hover {
   text-decoration: none;
 }
 
+.skill {
+  font-size: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 #about:hover {
   color: red;
   cursor: pointer;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.card-stack {
+  display: flex;
+  flex-direction: column;
 }
 
 #portfolio:hover {
