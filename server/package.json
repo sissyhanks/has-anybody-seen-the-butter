@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.16.1"
+  },
+  "description": "serving sissyhanks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "nodemon index.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "Bernie McKnight",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
