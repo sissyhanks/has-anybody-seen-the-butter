@@ -8,9 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "start": "node index.js",
     "build": "cd client && npm install && npm run build",
     "dev": "nodemon index.js",
     "watch": "nodemon server.js"
