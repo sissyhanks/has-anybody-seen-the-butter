@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sissyhanks/has-anybody-seen-the-butter/issues"
   },
-  "homepage": "https://github.com/sissyhanks/has-anybody-seen-the-butter#readme"
+  "homepage": "https://github.com/sissyhanks/has-anybody-seen-the-butter#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
 }
