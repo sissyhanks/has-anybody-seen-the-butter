@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -14,8 +13,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
+        <h1>SissyHanks.com</h1>
+        <h2>{!data ? "Loading..." : data}</h2>
+        <p>coming soon</p>
       </header>
     </div>
   );

@@ -11,7 +11,7 @@
     "start": "node index.js",
     "build": "cd client && npm install && npm run build",
     "dev": "nodemon index.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon index.js"
   },
   "author": "Bernie McKnight",
   "license": "ISC",
