@@ -17,8 +17,6 @@ const db = require("./config/connection");
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
-  });
+sequelize.sync().then(() => {
+  app.listen(PORT, () => console.log(`now listening on port ${PORT}`));
 });
